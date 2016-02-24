@@ -8,6 +8,11 @@ namespace learningcsharp
     {
         static void Main(string[] args)
         {
+            LLStackQueueTestSuite();
+        }
+
+        static void LLStackQueueTestSuite()
+        {
             Console.WriteLine("Hello, say something.");
             String input = Console.ReadLine();
             MyLinkedList<char> testlist = new MyLinkedList<char>();
@@ -23,7 +28,7 @@ namespace learningcsharp
             testlist.PrintAllNodes();
             testlist.ReverseRecur();
             Console.Write("Reversed: ");
-                
+
             while (teststack.isEmpty() == false)
             {
                 Console.Write(teststack.pop());
@@ -38,5 +43,7 @@ namespace learningcsharp
             }
             Console.ReadLine();
         }
+
+
     }
 }
