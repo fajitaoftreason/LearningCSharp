@@ -74,7 +74,8 @@ namespace LearningLib
             ReverseRecurHelper(head, null);
         }
 
-        public void ReverseRecurHelper(ListNode<T> current, ListNode<T> prev)
+        //called by wrapper function above
+        private void ReverseRecurHelper(ListNode<T> current, ListNode<T> prev)
         {
             //upon reaching the end of the list, this is the new head
             if (current == null)
