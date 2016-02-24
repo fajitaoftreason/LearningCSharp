@@ -61,13 +61,14 @@ namespace LearningLib
         {
             for (int i = 0; i < size; i++)
             {
-                tail.Next = head;
-                tail = head;
-                head = head.Next;
-                tail.Next = null;
+                tail.Next = head;   //make circular
+                tail = head;        //move tail over one
+                head = head.Next;   //move head over one
+                tail.Next = null;   //break circle one node over, (previous head is now at the tail)
             }
         }
 
+        //only here so that the call is in the same format as the iterative reverse
         public void ReverseRecur()
         {
             ReverseRecurHelper(head, null);
