@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LearningLib
+namespace LinkedListLib
 {
     public class Stack<T>
     {

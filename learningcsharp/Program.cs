@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Text;
-using LearningLib;
+using LinkedListLib;
 
 namespace learningcsharp
 {
