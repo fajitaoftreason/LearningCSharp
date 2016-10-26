@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{713CFB7C-22F4-4F15-85C6-401D0065186D}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{F6CB7B25-9DE4-42F6-84E4-C61D412E2CB6}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>learningcsharp</RootNamespace>
-    <AssemblyName>learningcsharp</AssemblyName>
+    <RootNamespace>GraphLib</RootNamespace>
+    <AssemblyName>GraphLib</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,33 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="BasicGraph.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\GraphLib\GraphLib.csproj">
-      <Project>{f6cb7b25-9de4-42f6-84e4-c61d412e2cb6}</Project>
-      <Name>GraphLib</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\LearningLib\LinkedListLib.csproj">
-      <Project>{f82b840c-aae4-477b-aba0-635e5a0b3634}</Project>
-      <Name>LinkedListLib</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SortLib\SortLib.csproj">
-      <Project>{5dbb7d2f-dfb8-4b80-a95f-2100b0dce81f}</Project>
-      <Name>SortLib</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\StringLib\StringLib.csproj">
-      <Project>{258b1c21-b2a4-4fb7-98d9-e54a340a8106}</Project>
-      <Name>StringLib</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TreeLib\TreeLib.csproj">
-      <Project>{bd5fb203-e828-4a7d-8fac-6282ba111811}</Project>
-      <Name>TreeLib</Name>
-    </ProjectReference>
+    <Compile Include="TSP.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

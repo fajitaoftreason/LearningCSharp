@@ -8,23 +8,36 @@ namespace TreeLib
 {
     public class MyTree<T>
     {
-        TreeNode<T> head;
+        public TreeNode<T> head;
 
         public MyTree(T data)
         {
             head = new TreeNode<T>(data);
         }
     }
-    class TreeNode<T>
+    public class TreeNode<T>
     {
-        T data;
-        TreeNode<T> left;
-        TreeNode<T> right;
+        public T data;
+        public TreeNode<T> left;
+        public TreeNode<T> right;
 
         public TreeNode(T data)
         {
             this.data = data;
-            left = right = null;
+            left = null;
+            right = null;
         }
+
+        public void setRight(TreeNode<T> newright)
+        {
+            this.right = newright;
+        }
+
+        public void setLeft(TreeNode<T> newleft)
+        {
+            this.left = newleft;
+        }
+
+
     }
 }

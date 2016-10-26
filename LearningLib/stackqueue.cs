@@ -2,7 +2,7 @@
 
 namespace LinkedListLib
 {
-    public class Stack<T>
+    public class MyStack<T>
     {
         public int Size { get; private set; }
         private class Node
@@ -56,11 +56,11 @@ namespace LinkedListLib
 
     }
 
-    public class Queue<T>
+    public class MyQueue<T>
     {
         private MyLinkedList<T> data;
 
-        public Queue()
+        public MyQueue()
         {
             data = new MyLinkedList<T>();
         }
